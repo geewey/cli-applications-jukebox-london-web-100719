@@ -61,6 +61,8 @@ def run
       when "exit"
         exit_jukebox
         break
+      else
+        puts "Invalid input"
       end
     end
     run
