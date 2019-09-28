@@ -52,15 +52,15 @@ def run
   command_input = gets.strip
   
     case command_input
+      when "exit"
+        exit_jukebox
+        break
       when "help"
         help
       when "list"
         list
       when "play"
         play
-      when "exit"
-        exit_jukebox
-        break
       else
         puts "Please try again."
     end
