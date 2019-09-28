@@ -43,24 +43,28 @@ def exit_jukebox
 end
 
 def run(songs)
+  puts "Please enter a command:"
+  command_input = gets.strip
   
   continuing_input = ["exit", "help", "list", "play"]
   while continuing_input.include?(command_input) do
-    puts "Please enter a command:"
-    command_input = gets.strip
-  
+    
     case command_input
     when "exit"
       exit_jukebox
       break
     when "help"
       help
+      run(songs)
     when "list"
       list(songs)
+      run(songs)
     when "play"
       play(songs)
+      run(songs)
     else
       puts "Please try again."
+      run(songs)
     end
   end
 end
