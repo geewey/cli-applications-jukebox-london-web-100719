@@ -58,7 +58,7 @@ def run(songs)
     when "play"
       play(songs)
     else
-      puts "Please try again."
+      puts "Invalid input, please try again"
     end
   end
 end
