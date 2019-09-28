@@ -44,9 +44,8 @@ end
 
 def run(songs)
   
-  while continuing_input.include?(command_input)
-  
-  while true do
+  continuing_input = ["exit", "help", "list", "play"]
+  while continuing_input.include?(command_input) do
     puts "Please enter a command:"
     command_input = gets.strip
   
