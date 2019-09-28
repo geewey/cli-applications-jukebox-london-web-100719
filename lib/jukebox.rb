@@ -51,7 +51,7 @@ def run(songs)
     
     case command_input
     when "exit"
-      exit_jukebox
+      print exit_jukebox
       break
     when "help"
       help
