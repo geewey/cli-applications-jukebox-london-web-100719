@@ -43,6 +43,8 @@ def exit_jukebox
 end
 
 def run(songs)
+  
+  
   while true do
     puts "Please enter a command:"
     command_input = gets.strip
@@ -58,7 +60,7 @@ def run(songs)
     when "play"
       play(songs)
     else
-      puts "Please enter a command."
+      puts "Please try again."
     end
   end
 end
