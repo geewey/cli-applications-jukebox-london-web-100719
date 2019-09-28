@@ -44,10 +44,10 @@ def exit_jukebox
 end
 
 def run
-  # continuing_input = ["help", "list", "play", "exit"]
-  # while continuing_input.include?(command_input)
   
-  while true do
+  continuing_input = ["help", "list", "play", "exit"]
+  while continuing_input.include?(command_input)
+  
   puts "Please enter a command:"
   command_input = gets.strip
   
@@ -58,11 +58,12 @@ def run
       when "help"
         help
       when "list"
-        list
+        list(songs)
       when "play"
-        play
+        play(songs)
       else
-        puts "Please try again."
+        puts "Please enter a command."
+        run
     end
   end
     
