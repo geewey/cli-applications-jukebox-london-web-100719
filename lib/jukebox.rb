@@ -58,10 +58,13 @@ def run
         break
       when "help"
         help
+        run
       when "list"
         list(songs)
+        run
       when "play"
         play(songs)
+        run
       else
         puts "Please enter a command."
         run
