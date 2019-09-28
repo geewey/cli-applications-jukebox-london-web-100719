@@ -44,6 +44,7 @@ end
 
 def run(songs)
   
+  while continuing_input.include?(command_input)
   
   while true do
     puts "Please enter a command:"
