@@ -51,7 +51,7 @@ def run
   puts "Please enter a command:"
   command_input = gets.strip
   
-    case = command_input
+    case command_input
       when "help"
         help
       when "list"
