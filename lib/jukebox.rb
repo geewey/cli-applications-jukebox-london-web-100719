@@ -46,7 +46,7 @@ def run(songs)
   puts "Please enter a command:"
   command_input = gets.strip
   
-  continuing_input = ["exit", "help", "list", "play"]
+  continuing_input = ["help", "list", "play"]
   while continuing_input.include?(command_input) do
     
     case command_input
