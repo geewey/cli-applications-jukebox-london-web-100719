@@ -47,7 +47,6 @@ def run
   
   continuing_input = ["help", "list", "play", "exit"]
   
-  
   puts "Please enter a command:"
   command_input = gets.strip
   while continuing_input.include?(command_input)
