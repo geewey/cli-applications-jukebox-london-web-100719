@@ -53,16 +53,12 @@ def run(songs)
       break
     when "help"
       help
-      run(songs)
     when "list"
       list(songs)
-      run(songs)
     when "play"
       play(songs)
-      run(songs)
     else
       puts "Please try again."
-      run(songs)
     end
   end
 end
