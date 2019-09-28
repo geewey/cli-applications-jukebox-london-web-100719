@@ -46,10 +46,11 @@ end
 def run
   
   continuing_input = ["help", "list", "play", "exit"]
-  while continuing_input.include?(command_input)
+  
   
   puts "Please enter a command:"
   command_input = gets.strip
+  while continuing_input.include?(command_input)
   
     case command_input
       when "exit"
